@@ -1,0 +1,115 @@
+1. What is a Method in Java?
+A method in Java is a block of code that performs a specific task. It runs when it is called.
+
+
+returnType methodName(parameters) {
+    // statements
+
+}
+
+| Component | Meaning
+| `returnType` | Type of value returned, such as `int`, `double`, or `void` |
+| `methodName` | Name of the method |
+| `parameters` | Values received by the method |
+| `return` | Sends a value back to the caller |
+| `void` | Indicates that the method returns no value |
+
+-->Methods in Java: Parameterized and Non-Parameterized
+1. Parameterized Method
+A parameterized method is a method that accepts one or more parameters as input.
+
+Syntax:
+returnType methodName(parameters) {
+    // statements
+}
+
+Example:
+class Main {
+    static void add(int a, int b) {
+        System.out.println(a + b);
+    }
+
+    public static void main(String[] args) {
+        add(10, 20);
+    }
+}
+
+Output:
+30
+
+Here, int a and int b are parameters, while 10 and 20 are arguments.
+2. Non-Parameterized Method
+A non-parameterized method is a method that does not accept any parameters.
+
+Syntax:
+returnType methodName() {
+    // statements
+}
+
+Example:
+class Main {
+    static void add() {
+        int a = 10;
+        int b = 20;
+        System.out.println(a + b);
+    }
+
+    public static void main(String[] args) {
+        add();
+    }
+}
+
+Output:
+30
+
+
+
+--- > Void and Non-Void Methods in Java
+1. Void Method
+A void method is a method that does not return any value.
+
+Syntax:
+static void methodName() {
+    // statements
+}
+
+Example:
+class Main {
+    static void add() {
+        int a = 10, b = 20;
+        System.out.println(a + b);
+    }
+
+    public static void main(String[] args) {
+        add();
+    }
+}
+
+Output:
+30
+
+Here, void means the method does not return a value to the caller.
+2. Non-Void Method
+A non-void method is a method that returns a value to the caller. Its return type can be int, double, String, boolean, etc.
+
+Syntax:
+static returnType methodName() {
+    // statements
+    return value;
+}
+
+Example:
+class Main {
+    static int add() {
+        int a = 10, b = 20;
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int result = add();
+        System.out.println(result);
+    }
+}
+
+Output:
+30
